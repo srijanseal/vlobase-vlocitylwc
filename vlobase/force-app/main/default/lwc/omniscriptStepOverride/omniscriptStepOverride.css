@@ -1,0 +1,22 @@
+.os-step-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ffcbcb;
+  border-radius: 25px;
+}
+.collapsible-box {
+  border: 1px solid #ffcbcb;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.collapsible-header {
+  padding: 10px;
+  border-radius: inherit;
+  background-color: #ffeded;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
