@@ -1,0 +1,27 @@
+<template>
+  <div class="os-step-container" if:true={jsonDef.bAccordionActive}>
+    <!-- Generic Step Header -->
+    <div if:false={jsonDef.propSetMap.hideNavigation} class="slds-grid slds-m-bottom--large slds-grid_align-end">
+      <div class="slds-col">
+        <a href="https://srijanseal.blogspot.com">
+          <img src={stepLogo} alt="Step Logo" width="125" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Body Slot -->
+    <slot></slot>
+
+    <!-- Buttons -->
+    <div class="slds-grid slds-grid_align-center">
+      <vlocity_cmt-button variant="brand" disabled="" label="Custom Next" icon-name="utility:chevrondown"
+        icon-position="right" onclick={navigateNext}></vlocity_cmt-button>
+    </div>
+  </div>
+  <div class="collapsible-box" if:false={jsonDef.bAccordionActive}>
+    <div class="collapsible-header">
+      <h2>{jsonDef.propSetMap.label}</h2>
+      <vlocity_cmt-button variant="brand" disabled="" label="expand" data-index={jsonDef.indexInParent} onclick={navigateStep}></vlocity_cmt-button>
+    </div>
+  </div>
+</template>
