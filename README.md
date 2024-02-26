@@ -1,6 +1,7 @@
 # Omniscript LWC Component Overrides
 
-![alt text](https://github.com/srijanseal/vlobase-vlocitylwc/tree/public/vlobase/force-app/main/default/staticresources/omniscriptStepLogo.png "Vlobase")
+![alt text](Vlobase%20Transparent%20Small.png "Vlobase")
+</br>
 I'm using Vlocity Communications Cloud, also known as 'vlocity_cmt' package. Here's the list of components modified:
 
 ## Omniscript related
