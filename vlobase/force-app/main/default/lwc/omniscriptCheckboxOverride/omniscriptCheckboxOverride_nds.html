@@ -1,0 +1,27 @@
+<template>
+  <div class="demo-only nds-size_1-of-2">
+    <div class="nds-form-element">
+      <label class="nds-checkbox_toggle nds-grid">
+        <span class="nds-form-element__label nds-m-bottom_none"
+          >Toggle Label</span
+        >
+        <input
+          type="checkbox"
+          name="checkbox"
+          aria-describedby="toggle-desc"
+          value="on"
+          onclick={handleChange}
+        />
+        <span
+          id="toggle-desc"
+          class="nds-checkbox_faux_container"
+          aria-live="assertive"
+        >
+          <span class="nds-checkbox_faux"></span>
+          <span class="nds-checkbox_on">Enabled</span>
+          <span class="nds-checkbox_off">Disabled</span>
+        </span>
+      </label>
+    </div>
+  </div>
+</template>
