@@ -1,0 +1,56 @@
+<template>
+  <lightning-card title="Modal Example" icon-name="standard:marketing_actions">
+    <lightning-button
+      variant="brand"
+      label="Show Info Modal"
+      onclick={showModal}
+      class="slds-m-around_small"
+      data-button-type="info"
+    ></lightning-button>
+  </lightning-card>
+  <!-- 
+  The following are a list of properties that are declared inside of the Omniscript Modal.
+
+| Name            | Scope        | Description                                                  |
+| --------------- | ------------ | ------------------------------------------------------------ |
+| type            | public (api) | Reactive public property. Identifies if the modal is a success or an error. |
+| hideHeader      | public (api) | Reactive public property. Identifies if the header of the modal is to be hidden. |
+| HideFooter      | public (api) | Reactive public property. Identifies if the footer of the modal is to be hidden. |
+| layout          | public (api) | Reactive public property. Determines which LWC player to use - lightning or newport. |
+| triggeredOnStep | public (api) | Reactive public property. Indicator if modal is triggered on step or in between steps. |
+
+### Methods
+
+The following are a list of methods that are declared inside of the Omniscript Modal.
+
+| Signature           | Scope        | Return Value | Description                                                  |
+| ------------------- | ------------ | ------------ | ------------------------------------------------------------ |
+| closeModal()        | api (public) | void         | Closes the modal.                                            |
+| openModal()         | api (public) | void         | Opens the modal.                                             |
+| connectedCallback() | private      | void         | Overwrite of the native LWC connectedCallback. Applies modal styles depending on theme. |
+| render()            | private      | template     | Overwrites native LWC render                                 | -->
+
+  <vlocity_cmt-omniscript-modal
+    data-omni-key="omnimodaloverride"
+    type={type}
+    layout={layout}
+    triggered-on-step
+  >
+    <div slot="header" class="slds-clearfix">
+      <div>Sample modal header</div>
+    </div>
+
+    <div slot="content">
+      <p>HEY!!!! THIS IS VLOBASE!</p>
+    </div>
+
+    <div slot="footer">
+      <lightning-button
+        variant="brand"
+        label="Close Modal"
+        onclick={hideModal}
+        class="slds-m-around_small"
+      ></lightning-button>
+    </div>
+  </vlocity_cmt-omniscript-modal>
+</template>
