@@ -6,9 +6,17 @@ I'm using Vlocity Communications Cloud, also known as 'vlocity_cmt' package. Her
 
 ## Omniscript related
 
-| Branch                    | Override       | Overriden              |
-|:-------------------------:|:--------------:|:----------------------:|
-| feature/omniscriptStep    | omniscriptStep | omniscriptStepOverride |
+| Override           | Overriden LWC Name         |
+|--------------------|----------------------------|
+| omniscriptStep     | omniscriptStepOverride     |
+| omniscriptCheckbox | omniscriptCheckboxOverride |
+| omniscriptModal    | omniscriptModalOverride    |
+
+## Utilities
+
+| Omnistudio/Vlocity   Module Name | Demo LWC Name       |
+|----------------------------------|---------------------|
+| vlocity_cmt/navigationUtils      | navigationUtilsDemo |
 
 ## Read All About It
 
