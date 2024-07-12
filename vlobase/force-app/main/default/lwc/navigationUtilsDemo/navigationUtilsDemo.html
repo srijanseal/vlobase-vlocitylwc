@@ -1,0 +1,115 @@
+<template>
+  <lightning-card title="Navigation Utils Demo">
+    <!-- Default/basic -->
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-input
+        type="text"
+        label="Enter some text"
+        value={inputText}
+        onchange={updateInputText}
+      ></lightning-input>
+    </div>
+
+    <lightning-button
+      label="Navigate to WebPage"
+      title="Navigate"
+      data-button-action="nav_to_webpage"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+    <lightning-button
+      label="Navigate to Account in Browser Tab"
+      title="Navigate to Account Record"
+      data-button-action="nav_to_account_new_browser_tab"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+    <lightning-button
+      label="Navigate to Account in Console Tab"
+      title="Navigate to Account Record"
+      data-button-action="nav_to_account_new_console_tab"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+    <lightning-button
+      label="Navigate to Object Page (default = Account)"
+      title="Navigate to Object"
+      data-button-action="nav_to_object"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+    <lightning-button
+      label="Navigate to Named Page (default = Home)"
+      title="Navigate to Namedpage"
+      data-button-action="nav_to_named_page"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+    <lightning-button
+      label="Navigate to Community Named Page (default = Home)"
+      title="Navigate to CommNamedpage"
+      data-button-action="nav_to_comm_named_page"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+    <lightning-button
+      label="Show stringifyParams Example"
+      title="stringifyParams"
+      data-button-action="stringify-params-demo"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+    <lightning-button
+      label="Show parseParams Example"
+      title="parseParams"
+      data-button-action="parse-params-demo"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+    <lightning-button
+      label="Show stringifyParams Example"
+      title="stringifyParams"
+      data-button-action="stringify-params-demo"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+    <lightning-button
+      label="Show normalizeParams Example"
+      title="normalizeParams"
+      data-button-action="normalize-params-demo"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+    <lightning-button
+      label="Show deNamespace Example"
+      title="deNamespace"
+      data-button-action="denamespace-demo"
+      onclick={handleClick}
+      class="slds-var-m-around_medium"
+    ></lightning-button
+    ><br /><br />
+
+    <p>
+      <lightning-formatted-text
+        class="slds-var-m-around_medium"
+        value="Output"
+      ></lightning-formatted-text>
+    </p>
+    <p>
+      <lightning-formatted-text
+        class="slds-var-m-around_medium"
+        value={outputText}
+      ></lightning-formatted-text>
+    </p>
+  </lightning-card>
+</template>
